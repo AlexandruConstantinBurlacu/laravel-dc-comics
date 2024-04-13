@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('series');
             $table->date('sale_date');
             $table->string('type');
-            $table->text('artists');
-            $table->text('writers');
+            $table->text('artists')->nullable();
+            $table->text('writers')->nullable();
         });
     }
 
