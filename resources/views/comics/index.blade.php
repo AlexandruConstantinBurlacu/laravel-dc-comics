@@ -17,10 +17,10 @@
                 <tr>
                     <td>{{ $comic->title }}</td>
                     <td>{{ $comic->artists }}</td>
-                    <td><a href="{{ route('comics.show', $comic->id) }}">Vedi</a></td>
+                    <td><a href="{{ route('comics.show', $comic->id) }}">See more</a></td>
                 </tr>
             @endforeach
         </tbody>
     </table>
-    <a href="{{ route('comics.create') }}">Inserisci nuovo fumetto</a>
+    <a href="{{ route('comics.create') }}">Create new comic</a>
 @endsection
