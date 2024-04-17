@@ -5,8 +5,6 @@
         Comics List
     </h1>
 
-    @dump($comics)
-
     <table class="table">
         <thead>
           <tr>
@@ -24,4 +22,5 @@
             @endforeach
         </tbody>
     </table>
+    <a href="{{ route('comics.create') }}">Inserisci nuovo fumetto</a>
 @endsection
